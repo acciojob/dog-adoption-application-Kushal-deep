@@ -47,6 +47,13 @@
 		
 
 <button type="submit" id="submit" value="Submit">Submit</button>
+
+
+		it('Checking submit button', () => {
+    cy.get('button').should('have.attr','value','Submit')
+    cy.get('button').should('have.attr','id','submit')
+    cy.get('button').should('have.attr','type','submit')
+})
 		
 	</form>
     <script type="text/javascript" src="./script.js">
